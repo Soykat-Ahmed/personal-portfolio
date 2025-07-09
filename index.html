@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Changer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-container">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading Portfolio</div>
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="#home" class="logo">Saifur <span>Rahman</span> Soykat</a>
+
+        <button id="menu-toggle" aria-label="Navigation Menu" aria-expanded="false">
+            <div class="menu-icon-wrapper">
+                <span class="menu-line top-line"></span>
+                <span class="menu-line middle-line"></span>
+                <span class="menu-line bottom-line"></span>
+            </div>
+        </button>
+
+        <nav class="navbar">
+            <a href="#home" class="active">
+                <i class="nav-icon fas fa-home"></i>
+                <span class="nav-text">Home</span>
+                <span class="nav-highlight"></span>
+            </a>
+            <a href="#education">
+                <i class="nav-icon fas fa-graduation-cap"></i>
+                <span class="nav-text">Education</span>
+                <span class="nav-highlight"></span>
+            </a>
+            <a href="#services">
+                <i class="nav-icon fas fa-code"></i>
+                <span class="nav-text">Services</span>
+                <span class="nav-highlight"></span>
+            </a>
+            <a href="#skills">
+                <i class="nav-icon fas fa-laptop-code"></i>
+                <span class="nav-text">Skills</span>
+                <span class="nav-highlight"></span>
+            </a>
+            <a href="#contact">
+                <i class="nav-icon fas fa-envelope"></i>
+                <span class="nav-text">Contact</span>
+                <span class="nav-highlight"></span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="dynamic-background">
+            <canvas id="particle-canvas"></canvas>
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="home-content">
+            <h1 class="dynamic-home-title">
+                Hi, It's <span class="highlighted-name">Soykat</span>
+            </h1>
+            <div class="dynamic-profession-container">
+                <h3 class="dynamic-intro">I'm a</h3>
+                <div class="dynamic-text-wrapper">
+                    <span class="dynamic-text" style="--i:0;" data-text="Web Developer">Web Developer</span>
+                    <span class="dynamic-text" style="--i:1;" data-text="Software Engineer">Software Engineer</span>
+                    <span class="dynamic-text" style="--i:2;" data-text="AI Engineer">AI Engineer</span>
+                    <span class="dynamic-text" style="--i:3;" data-text="Cybersecurity Expert">Cybersecurity
+                        Expert</span>
+                    <span class="dynamic-text" style="--i:4;" data-text="Photo Editor">Photo Editor</span>
+                </div>
+            </div>
+            <h2>I am a computer science student and I am a professional web developer and designer . I am expert of the
+                frontend development . will I create a smooth and buttery and user friendly website for you business .
+            </h2>
+
+            <!-- Replace your existing social icons with this -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/soykat-ahmed" class="social-icon linkedin" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="icon-hover"></span>
+                    <span class="icon-pulse"></span>
+                </a>
+                <a href="https://github.com/Soykat-Ahmed" class="social-icon github" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span class="icon-hover"></span>
+                    <span class="icon-pulse"></span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100017668570003&mibextid=kFxxJD"
+                    class="social-icon facebook" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="icon-hover"></span>
+                    <span class="icon-pulse"></span>
+                </a>
+                <a href="https://wa.me/+8801981455908" class="social-icon whatsapp" data-tooltip="WhatsApp"
+                    id="whatsappButton">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="icon-hover"></span>
+                    <span class="icon-pulse"></span>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a href="https://www.linkedin.com/in/soykat-ahmed" class="btn btn-hire">
+                    <span class="btn-text">Hire Me</span>
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                        </svg>
+                    </span>
+                    <div class="btn-liquid"></div>
+                </a>
+                <a href="SOYKAT.CV.pdf" class="btn btn-cv" download="SOYKAT.CV.pdf">
+                    <span class="btn-text">Download CV</span>
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"></path>
+                        </svg>
+                    </span>
+                    <div class="btn-liquid"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <div class="profile-border-animation"></div>
+                <div class="profile-image-holder">
+                    <img src="images/img.png.png" alt="Professional Profile Image" class="profile-img">
+                    <div class="profile-shine"></div>
+                    <div class="profile-reflection"></div>
+                </div>
+                <div class="profile-particles">
+                    <!-- 12 particles for more dynamic effect -->
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                </div>
+                <div class="profile-aura"></div>
+                <div class="profile-connection-dots"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Education Section -->
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <!-- Animated Background Canvas -->
+        <canvas id="education-canvas"></canvas>
+
+        <!-- Floating Particles -->
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-text">Academic</span>
+                <span class="title-highlight">Journey</span>
+            </h2>
+            <div class="section-subtitle">My Educational Background & Achievements</div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="education-timeline">
+            <!-- Timeline Item 1 - School -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                    <div class="marker-date">2012-2023</div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="institution-name">
+                            <i class="fas fa-school"></i>
+                            Government Progati High School
+                        </h3>
+                        <div class="education-details">
+                            <span class="degree">Secondary School Certificate (SSC)</span>
+                            <span class="gpa"><i class="fas fa-star"></i> GPA: 3.89/5.00</span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Mirpur, Dhaka</span>
+                        </div>
+                        <p class="education-description">
+                            Completed secondary education with honors in Science stream. Active participant in science
+                            fairs,
+                            debate competitions, and sports events. Developed strong foundation in mathematics and
+                            physics.
+                        </p>
+                        <div class="achievements">
+                            <div class="achievement-badge">
+                                <i class="fas fa-trophy"></i> Science Fair Winner
+                            </div>
+                            <div class="achievement-badge">
+                                <i class="fas fa-medal"></i> Debate Champion
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Government Progati High School" class="institution-image">
+                        <div class="image-overlay">
+                            <a href="https://www.facebook.com/share/g/19vj2xBPGr/" target="_blank" class="visit-button">
+                                Visit School <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 - College -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                    <div class="marker-date">2023-Present</div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="institution-name">
+                            <i class="fas fa-university"></i>
+                            ISIT Polytechnic Institute
+                        </h3>
+                        <div class="education-details">
+                            <span class="degree">Diploma in Computer Science & Engineering</span>
+                            <span class="gpa"><i class="fas fa-star"></i> Current GPA: 3.75/4.00</span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                        </div>
+                        <p class="education-description">
+                            Currently pursuing diploma with specialization in software development and cybersecurity.
+                            Active member of programming club and participant in national hackathons.
+                            Developing expertise in web development and network security.
+                        </p>
+                        <div class="achievements">
+                            <div class="achievement-badge">
+                                <i class="fas fa-code"></i> Hackathon Winner
+                            </div>
+                            <div class="achievement-badge">
+                                <i class="fas fa-laptop-code"></i> Programming Club
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                            alt="ISIT Polytechnic Institute" class="institution-image">
+                        <div class="image-overlay">
+                            <a href="https://isit.edu.bd/" target="_blank" class="visit-button">
+                                Visit College <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Icons -->
+        <div class="floating-icons">
+            <i class="fas fa-graduation-cap"></i>
+            <i class="fas fa-book-open"></i>
+            <i class="fas fa-laptop-code"></i>
+            <i class="fas fa-microscope"></i>
+        </div>
+    </section>
+
+    <!-- Updated Services Section -->
+    <section class="services" id="services">
+        <!-- Animated Background Elements -->
+        <div class="services-bg-elements">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="bg-circle circle-3"></div>
+            <div class="bg-circle circle-4"></div>
+        </div>
+
+        <!-- Section Header with Dynamic Typing Effect -->
+        <div class="services-header">
+            <h2 class="services-title">
+                <span class="title-static">My</span>
+                <span class="title-dynamic">
+                    <span class="dynamic-word">Services</span>
+                    <span class="typing-cursor">|</span>
+                </span>
+            </h2>
+            <p class="services-subtitle">Professional solutions tailored to your needs</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <!-- Services Container -->
+        <div class="services-container">
+            <!-- Software Category - Enhanced -->
+            <div class="service-category" data-category="software">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3 class="category-title">Software Solutions</h3>
+                    <div class="category-underline"></div>
+                </div>
+                <ul class="service-list">
+                    <li class="service-item">
+                        <div class="service-content">
+                            <i class="fas fa-school service-bullet"></i>
+                            <span class="service-text">School Management Systems</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content">
+                            <i class="fas fa-utensils service-bullet"></i>
+                            <span class="service-text">Restaurant Management</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content">
+                            <i class="fas fa-hospital service-bullet"></i>
+                            <span class="service-text">Hospital Management</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
+                    </li>
+                </ul>
+                <div class="category-glow"></div>
+            </div>
+
+            <!-- Website Category - Enhanced -->
+            <div class="service-category" data-category="website">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-globe"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3 class="category-title">Web Development</h3>
+                    <div class="category-underline"></div>
+                </div>
+                <ul class="service-list">
+                    <li class="service-item">
+                        <div class="service-content">
+                            <i class="fas fa-shopping-cart service-bullet"></i>
+                            <span class="service-text">eCommerce Websites</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content">
+                            <i class="fas fa-briefcase service-bullet"></i>
+                            <span class="service-text">Portfolio Websites</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content">
+                            <i class="fas fa-code service-bullet"></i>
+                            <span class="service-text">Custom Web Applications</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
+                    </li>
+                </ul>
+                <div class="category-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <!-- Animated Background -->
+        <div class="skills-bg">
+            <canvas id="skills-canvas"></canvas>
+            <div class="skills-gradient"></div>
+        </div>
+
+        <!-- Floating Tech Icons -->
+        <div class="floating-tech-icons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-php"></i>
+        </div>
+
+        <!-- Section Header -->
+        <div class="skills-header">
+            <h2 class="skills-title">
+                <span class="title-text">Technical</span>
+                <span class="title-highlight">Expertise</span>
+            </h2>
+            <div class="skills-subtitle">Technologies I Work With</div>
+        </div>
+
+        <!-- Skills Container -->
+        <div class="skills-container">
+            <!-- Skill Boxes -->
+            <div class="skill-box" data-skill="html">
+                <div class="skill-icon">
+                    <i class="devicon-html5-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>HTML5</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="css">
+                <div class="skill-icon">
+                    <i class="devicon-css3-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>CSS3</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="javascript">
+                <div class="skill-icon">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="python">
+                <div class="skill-icon">
+                    <i class="devicon-python-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="php">
+                <div class="skill-icon">
+                    <i class="devicon-php-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>PHP</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="bootstrap">
+                <div class="skill-icon">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Bootstrap</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="mysql">
+                <div class="skill-icon">
+                    <i class="devicon-mysql-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>MySQL</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="word">
+                <div class="skill-icon">
+                    <i class="fas fa-file-word colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>MS Word</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="excel">
+                <div class="skill-icon">
+                    <i class="fas fa-file-excel colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>MS Excel</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="powerpoint">
+                <div class="skill-icon">
+                    <i class="fas fa-file-powerpoint colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>PowerPoint</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="video-editing">
+                <div class="skill-icon">
+                    <i class="fas fa-video colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Video Editing</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box" data-skill="photo-editing">
+                <div class="skill-icon">
+                    <i class="fas fa-paint-brush colored"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Photo Editing</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 82%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <!-- Animated Background -->
+        <div class="contact-bg-animation">
+            <canvas id="contact-canvas"></canvas>
+            <div class="contact-gradient-overlay"></div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="contact-floating-elements">
+            <div class="floating-icon"><i class="fas fa-envelope"></i></div>
+            <div class="floating-icon"><i class="fas fa-paper-plane"></i></div>
+            <div class="floating-icon"><i class="fas fa-comment-dots"></i></div>
+        </div>
+
+        <!-- Animated Heading -->
+        <div class="contact-heading">
+            <h2 class="contact-title">
+                <span class="title-text">Get In</span>
+                <span class="title-highlight">Touch</span>
+            </h2>
+            <div class="contact-subtitle">Let's discuss your project or just say hello!</div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="text" id="name" required>
+                        <label for="name">Full Name</label>
+                        <div class="input-underline"></div>
+                        <div class="input-highlight"></div>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="email" required>
+                        <label for="email">Email Address</label>
+                        <div class="input-underline"></div>
+                        <div class="input-highlight"></div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="tel" id="phone">
+                        <label for="phone">Phone Number</label>
+                        <div class="input-underline"></div>
+                        <div class="input-highlight"></div>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="input-underline"></div>
+                        <div class="input-highlight"></div>
+                    </div>
+                </div>
+
+                <div class="textarea-field">
+                    <textarea id="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="input-underline"></div>
+                    <div class="input-highlight"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon">
+                    <i class="fas fa-paper-plane"></i>
+                </span>
+                <div class="btn-particles">
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                </div>
+            </button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                    <h4>Email Me</h4>
+                    <a href="mailto:ahmedsoykat31@gmail.com">ahmedsoykat31@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info-content">
+                    <h4>Call Me</h4>
+                    <a href="tel:+8801981455908">+880 1981 455908</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                    <h4>Location</h4>
+                    <p>Mirpur, Dhaka, Bangladesh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Animated Background -->
+        <div class="footer-bg-animation">
+            <div class="footer-particle"></div>
+            <div class="footer-particle"></div>
+            <div class="footer-particle"></div>
+            <div class="footer-particle"></div>
+            <div class="footer-particle"></div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <!-- Animated "Made By" Text -->
+            <div class="made-by">
+                <div class="made-by-text">
+                    <span class="char">M</span>
+                    <span class="char">a</span>
+                    <span class="char">d</span>
+                    <span class="char">e</span>
+                    <span class="char">&nbsp;</span>
+                    <span class="char">w</span>
+                    <span class="char">i</span>
+                    <span class="char">t</span>
+                    <span class="char">h</span>
+                    <span class="char">&nbsp;</span>
+                    <span class="char">❤️</span>
+                    <span class="char">&nbsp;</span>
+                    <span class="char">b</span>
+                    <span class="char">y</span>
+                    <span class="char">&nbsp;</span>
+                    <span class="char">S</span>
+                    <span class="char">o</span>
+                    <span class="char">y</span>
+                    <span class="char">k</span>
+                    <span class="char">a</span>
+                    <span class="char">t</span>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/soykat-ahmed" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="link-tooltip">LinkedIn</span>
+                </a>
+                <a href="https://github.com/Soykat-Ahmed" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span class="link-tooltip">GitHub</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100017668570003&mibextid=kFxxJD" class="social-link"
+                    target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="link-tooltip">Facebook</span>
+                </a>
+                <a href="https://wa.me/+8801981455908" class="social-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="link-tooltip">WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Footer Navigation -->
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                &copy; <span id="year"></span> Saifur Rahman Soykat. All Rights Reserved.
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top">
+            <a href="#home">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
